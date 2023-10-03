@@ -21,6 +21,10 @@ app.post("/image-process", upload.single("image"), async (req, res) => {
     .catch((err) => console.error(err));
 });
 
+app.get("/", (req, res) => {
+  return res.status(200).send("Hello world");
+});
+
 app.listen(8000, () => {
   console.log("server listening on port 8000....");
 });
