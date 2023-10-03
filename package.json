@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "build": "rm -rf dist & npx tsc",
     "dev": "nodemon src/index.ts"
   },
   "dependencies": {
